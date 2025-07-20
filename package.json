@@ -1,0 +1,72 @@
+{
+  "name": "awesome-flutter-snippets-pro",
+  "displayName": "Awesome Flutter Snippets Pro",
+  "description": "Comprehensive Flutter snippets with Material Design 3, UI components, complete pages, themes, and clean architecture patterns",
+  "version": "1.0.0",
+  "publisher": "awesome-flutter-pro",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/awesome-flutter/awesome-flutter-snippets-pro"
+  },
+  "keywords": [
+    "flutter",
+    "dart",
+    "material design 3",
+    "snippets",
+    "mobile",
+    "ui",
+    "components",
+    "responsive",
+    "architecture",
+    "bloc",
+    "provider",
+    "theming"
+  ],
+  "engines": {
+    "vscode": "^1.102.0"
+  },
+  "categories": [
+    "Snippets",
+    "Other"
+  ],
+  "icon": "assets/icon.png",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "dart",
+        "path": "./snippets/flutter-widgets.code-snippets"
+      },
+      {
+        "language": "dart",
+        "path": "./snippets/flutter-pages.code-snippets"
+      },
+      {
+        "language": "dart",
+        "path": "./snippets/flutter-themes.code-snippets"
+      },
+      {
+        "language": "dart",
+        "path": "./snippets/flutter-architecture.code-snippets"
+      },
+      {
+        "language": "dart",
+        "path": "./snippets/flutter-responsive.code-snippets"
+      },
+      {
+        "language": "dart",
+        "path": "./snippets/flutter-navigation.code-snippets"
+      },
+      {
+        "language": "dart",
+        "path": "./snippets/flutter-forms.code-snippets"
+      },
+      {
+        "language": "dart",
+        "path": "./snippets/material3-components.code-snippets"
+      }
+    ]
+  },
+  "activationEvents": [
+    "onLanguage:dart"
+  ]
+}

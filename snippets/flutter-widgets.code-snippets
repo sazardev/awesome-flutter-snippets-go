@@ -1,0 +1,381 @@
+{
+  "Flutter Widget Template": {
+    "prefix": "flw-widget",
+    "description": "Basic Flutter StatelessWidget template",
+    "body": [
+      "import 'package:flutter/material.dart';",
+      "",
+      "class ${1:WidgetName} extends StatelessWidget {",
+      "  const ${1:WidgetName}({super.key});",
+      "",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return ${2:Container}(",
+      "      ${3:// Widget content}",
+      "    );",
+      "  }",
+      "}$0"
+    ]
+  },
+  
+  "Flutter StatefulWidget Template": {
+    "prefix": "flw-stateful",
+    "description": "Basic Flutter StatefulWidget template",
+    "body": [
+      "import 'package:flutter/material.dart';",
+      "",
+      "class ${1:WidgetName} extends StatefulWidget {",
+      "  const ${1:WidgetName}({super.key});",
+      "",
+      "  @override",
+      "  State<${1:WidgetName}> createState() => _${1:WidgetName}State();",
+      "}",
+      "",
+      "class _${1:WidgetName}State extends State<${1:WidgetName}> {",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return ${2:Container}(",
+      "      ${3:// Widget content}",
+      "    );",
+      "  }",
+      "}$0"
+    ]
+  },
+
+  "Material App": {
+    "prefix": "flw-app",
+    "description": "MaterialApp with Material 3 theme",
+    "body": [
+      "import 'package:flutter/material.dart';",
+      "",
+      "void main() {",
+      "  runApp(const ${1:MyApp}());",
+      "}",
+      "",
+      "class ${1:MyApp} extends StatelessWidget {",
+      "  const ${1:MyApp}({super.key});",
+      "",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return MaterialApp(",
+      "      title: '${2:App Title}',",
+      "      debugShowCheckedModeBanner: false,",
+      "      theme: ThemeData(",
+      "        useMaterial3: true,",
+      "        colorScheme: ColorScheme.fromSeed(",
+      "          seedColor: ${3:Colors.deepPurple},",
+      "        ),",
+      "      ),",
+      "      darkTheme: ThemeData(",
+      "        useMaterial3: true,",
+      "        colorScheme: ColorScheme.fromSeed(",
+      "          seedColor: ${3:Colors.deepPurple},",
+      "          brightness: Brightness.dark,",
+      "        ),",
+      "      ),",
+      "      themeMode: ThemeMode.system,",
+      "      home: const ${4:HomePage}(),",
+      "    );",
+      "  }",
+      "}$0"
+    ]
+  },
+
+  "Scaffold with AppBar": {
+    "prefix": "flw-scaffold",
+    "description": "Scaffold with Material 3 AppBar",
+    "body": [
+      "Scaffold(",
+      "  appBar: AppBar(",
+      "    title: Text('${1:Title}'),",
+      "    backgroundColor: Theme.of(context).colorScheme.inversePrimary,",
+      "    ${2:// actions: [",
+      "    //   IconButton(",
+      "    //     onPressed: () {},",
+      "    //     icon: const Icon(Icons.more_vert),",
+      "    //   ),",
+      "    // ],}",
+      "  ),",
+      "  body: ${3:Container}(",
+      "    ${4:// Body content}",
+      "  ),",
+      "  ${5:// floatingActionButton: FloatingActionButton(",
+      "  //   onPressed: () {},",
+      "  //   child: const Icon(Icons.add),",
+      "  // ),}",
+      ")$0"
+    ]
+  },
+
+  "Container with Decoration": {
+    "prefix": "flw-container",
+    "description": "Container with Material 3 decoration",
+    "body": [
+      "Container(",
+      "  ${1:width: double.infinity,}",
+      "  ${2:height: 100,}",
+      "  margin: const EdgeInsets.all(${3:16}),",
+      "  padding: const EdgeInsets.all(${4:16}),",
+      "  decoration: BoxDecoration(",
+      "    color: Theme.of(context).colorScheme.${5:surface},",
+      "    borderRadius: BorderRadius.circular(${6:12}),",
+      "    ${7:boxShadow: [",
+      "      BoxShadow(",
+      "        color: Colors.black.withOpacity(0.1),",
+      "        blurRadius: 8,",
+      "        offset: const Offset(0, 2),",
+      "      ),",
+      "    ],}",
+      "  ),",
+      "  child: ${8:Text('Content')},",
+      ")$0"
+    ]
+  },
+
+  "Card Widget": {
+    "prefix": "flw-card",
+    "description": "Material 3 Card widget",
+    "body": [
+      "Card(",
+      "  elevation: ${1:1},",
+      "  margin: const EdgeInsets.all(${2:8}),",
+      "  child: Padding(",
+      "    padding: const EdgeInsets.all(${3:16}),",
+      "    child: Column(",
+      "      crossAxisAlignment: CrossAxisAlignment.start,",
+      "      children: [",
+      "        ${4:Text(",
+      "          'Card Title',",
+      "          style: Theme.of(context).textTheme.titleMedium,",
+      "        ),}",
+      "        ${5:const SizedBox(height: 8),}",
+      "        ${6:Text(",
+      "          'Card content goes here',",
+      "          style: Theme.of(context).textTheme.bodyMedium,",
+      "        ),}",
+      "      ],",
+      "    ),",
+      "  ),",
+      ")$0"
+    ]
+  },
+
+  "ListView Builder": {
+    "prefix": "flw-listview",
+    "description": "ListView.builder with Material 3 styling",
+    "body": [
+      "ListView.builder(",
+      "  itemCount: ${1:items.length},",
+      "  padding: const EdgeInsets.all(${2:8}),",
+      "  itemBuilder: (context, index) {",
+      "    ${3:final item = items[index];}",
+      "    return Card(",
+      "      margin: const EdgeInsets.symmetric(",
+      "        vertical: ${4:4},",
+      "        horizontal: ${5:8},",
+      "      ),",
+      "      child: ListTile(",
+      "        leading: ${6:CircleAvatar(",
+      "          child: Text('\\${index + 1}'),",
+      "        ),}",
+      "        title: Text(${7:'Item \\${index + 1}'}),",
+      "        ${8:subtitle: Text('Subtitle for item \\${index + 1}'),}",
+      "        ${9:trailing: const Icon(Icons.arrow_forward_ios),}",
+      "        onTap: () {",
+      "          ${10:// Handle tap}",
+      "        },",
+      "      ),",
+      "    );",
+      "  },",
+      ")$0"
+    ]
+  },
+
+  "GridView Builder": {
+    "prefix": "flw-gridview",
+    "description": "GridView.builder with responsive grid",
+    "body": [
+      "GridView.builder(",
+      "  padding: const EdgeInsets.all(${1:8}),",
+      "  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(",
+      "    crossAxisCount: ${2:2},",
+      "    crossAxisSpacing: ${3:8},",
+      "    mainAxisSpacing: ${4:8},",
+      "    childAspectRatio: ${5:1},",
+      "  ),",
+      "  itemCount: ${6:items.length},",
+      "  itemBuilder: (context, index) {",
+      "    ${7:final item = items[index];}",
+      "    return Card(",
+      "      child: InkWell(",
+      "        onTap: () {",
+      "          ${8:// Handle tap}",
+      "        },",
+      "        borderRadius: BorderRadius.circular(12),",
+      "        child: Padding(",
+      "          padding: const EdgeInsets.all(${9:8}),",
+      "          child: Column(",
+      "            mainAxisAlignment: MainAxisAlignment.center,",
+      "            children: [",
+      "              ${10:Icon(",
+      "                Icons.image,",
+      "                size: 48,",
+      "                color: Theme.of(context).colorScheme.primary,",
+      "              ),}",
+      "              ${11:const SizedBox(height: 8),}",
+      "              ${12:Text(",
+      "                'Item \\${index + 1}',",
+      "                style: Theme.of(context).textTheme.titleSmall,",
+      "                textAlign: TextAlign.center,",
+      "              ),}",
+      "            ],",
+      "          ),",
+      "        ),",
+      "      ),",
+      "    );",
+      "  },",
+      ")$0"
+    ]
+  },
+
+  "Row with Responsive Layout": {
+    "prefix": "flw-row",
+    "description": "Row with responsive spacing",
+    "body": [
+      "Row(",
+      "  mainAxisAlignment: MainAxisAlignment.${1:spaceEvenly},",
+      "  crossAxisAlignment: CrossAxisAlignment.${2:center},",
+      "  children: [",
+      "    ${3:Expanded(",
+      "      child: Container(",
+      "        child: Text('Item 1'),",
+      "      ),",
+      "    ),}",
+      "    ${4:const SizedBox(width: 16),}",
+      "    ${5:Expanded(",
+      "      child: Container(",
+      "        child: Text('Item 2'),",
+      "      ),",
+      "    ),}",
+      "  ],",
+      ")$0"
+    ]
+  },
+
+  "Column with Spacing": {
+    "prefix": "flw-column",
+    "description": "Column with proper spacing",
+    "body": [
+      "Column(",
+      "  mainAxisAlignment: MainAxisAlignment.${1:start},",
+      "  crossAxisAlignment: CrossAxisAlignment.${2:start},",
+      "  children: [",
+      "    ${3:Text(",
+      "      'Title',",
+      "      style: Theme.of(context).textTheme.headlineMedium,",
+      "    ),}",
+      "    ${4:const SizedBox(height: 16),}",
+      "    ${5:Text(",
+      "      'Content goes here',",
+      "      style: Theme.of(context).textTheme.bodyLarge,",
+      "    ),}",
+      "    ${6:const SizedBox(height: 24),}",
+      "    ${7:// Add more widgets here}",
+      "  ],",
+      ")$0"
+    ]
+  },
+
+  "Padding Widget": {
+    "prefix": "flw-padding",
+    "description": "Padding with standard spacing",
+    "body": [
+      "Padding(",
+      "  padding: const EdgeInsets.${1:all}(${2:16}),",
+      "  child: ${3:Text('Content')},",
+      ")$0"
+    ]
+  },
+
+  "Center Widget": {
+    "prefix": "flw-center",
+    "description": "Center widget with child",
+    "body": [
+      "Center(",
+      "  child: ${1:Text('Centered Content')},",
+      ")$0"
+    ]
+  },
+
+  "Expanded Widget": {
+    "prefix": "flw-expanded",
+    "description": "Expanded widget with flex",
+    "body": [
+      "Expanded(",
+      "  ${1:flex: 1,}",
+      "  child: ${2:Container()},",
+      ")$0"
+    ]
+  },
+
+  "Flexible Widget": {
+    "prefix": "flw-flexible",
+    "description": "Flexible widget with flex",
+    "body": [
+      "Flexible(",
+      "  ${1:flex: 1,}",
+      "  ${2:fit: FlexFit.loose,}",
+      "  child: ${3:Container()},",
+      ")$0"
+    ]
+  },
+
+  "SizedBox": {
+    "prefix": "flw-sizedbox",
+    "description": "SizedBox for spacing",
+    "body": [
+      "const SizedBox(",
+      "  ${1:height: 16,}",
+      "  ${2:width: 16,}",
+      ")$0"
+    ]
+  },
+
+  "Wrap Widget": {
+    "prefix": "flw-wrap",
+    "description": "Wrap widget for overflow handling",
+    "body": [
+      "Wrap(",
+      "  spacing: ${1:8},",
+      "  runSpacing: ${2:8},",
+      "  children: [",
+      "    ${3:Chip(label: Text('Tag 1')),}",
+      "    ${4:Chip(label: Text('Tag 2')),}",
+      "    ${5:Chip(label: Text('Tag 3')),}",
+      "  ],",
+      ")$0"
+    ]
+  },
+
+  "Stack Widget": {
+    "prefix": "flw-stack",
+    "description": "Stack widget with positioned children",
+    "body": [
+      "Stack(",
+      "  ${1:alignment: Alignment.center,}",
+      "  children: [",
+      "    ${2:Container(",
+      "      width: 200,",
+      "      height: 200,",
+      "      color: Colors.blue,",
+      "    ),}",
+      "    ${3:Positioned(",
+      "      top: 16,",
+      "      right: 16,",
+      "      child: Icon(Icons.favorite),",
+      "    ),}",
+      "  ],",
+      ")$0"
+    ]
+  }
+}
