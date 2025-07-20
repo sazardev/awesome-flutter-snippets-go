@@ -385,7 +385,7 @@
       "  Future<void> _handlePostCreation(${1:User} ${4:user}) async {",
       "    // Implement post-creation business logic",
       "    // e.g., send welcome email, create audit log, etc.",",
-      "    // This is where you'd integrate with other services",
+      "    // This is where you\\'d integrate with other services",
       "  }",
       "",
       "  Future<void> _handlePostRetrieval(${1:User} ${4:user}) async {",
