@@ -1,4 +1,4 @@
-# awesom# Awesome Flutter Snippets Pro
+# Awesome Flutter Snippets Pro
 
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://marketplace.visualstudio.com/items?itemName=awesome-flutter-pro.awesome-flutter-snippets-pro)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)

@@ -238,7 +238,7 @@
       "  },",
       "  ${10:onChanged: (value) {",
       "    // Handle value change",
-      "  },}",
+      "  },",
       ")$0"
     ]
   },

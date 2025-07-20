@@ -65,8 +65,5 @@
         "path": "./snippets/material3-components.code-snippets"
       }
     ]
-  },
-  "activationEvents": [
-    "onLanguage:dart"
-  ]
+  }
 }
