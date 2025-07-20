@@ -63,6 +63,18 @@
       {
         "language": "dart",
         "path": "./snippets/material3-components.code-snippets"
+      },
+      {
+        "language": "dart",
+        "path": "./snippets/flutter-animations.code-snippets"
+      },
+      {
+        "language": "dart",
+        "path": "./snippets/flutter-buttons.code-snippets"
+      },
+      {
+        "language": "dart",
+        "path": "./snippets/flutter-appbars.code-snippets"
       }
     ]
   }
