@@ -1,7 +1,7 @@
 {
   "name": "awesome-flutter-snippets-pro",
   "displayName": "Awesome Flutter Snippets Pro",
-  "description": "Comprehensive Flutter snippets with Material Design 3, UI components, complete pages, themes, and clean architecture patterns",
+  "description": "Ultimate Flutter snippets collection with Material Design 3, Clean Architecture, comprehensive CRUD operations, advanced data patterns, dependency injection, and professional code structures",
   "version": "1.0.0",
   "publisher": "awesome-flutter-pro",
   "repository": {
@@ -20,7 +20,33 @@
     "architecture",
     "bloc",
     "provider",
-    "theming"
+    "theming",
+    "clean architecture",
+    "ddd",
+    "domain driven design",
+    "repository pattern",
+    "use cases",
+    "dependency injection",
+    "getit",
+    "dartz",
+    "either",
+    "failure handling",
+    "data layer",
+    "domain layer",
+    "presentation layer",
+    "dto",
+    "mapper",
+    "datasource",
+    "hive",
+    "dio",
+    "http",
+    "caching",
+    "offline support",
+    "crud operations",
+    "validation",
+    "business logic",
+    "entities",
+    "value objects"
   ],
   "engines": {
     "vscode": "^1.102.0"
@@ -75,6 +101,30 @@
       {
         "language": "dart",
         "path": "./snippets/flutter-appbars.code-snippets"
+      },
+      {
+        "language": "dart",
+        "path": "./snippets/clean-architecture-core.code-snippets"
+      },
+      {
+        "language": "dart",
+        "path": "./snippets/clean-architecture-usecases.code-snippets"
+      },
+      {
+        "language": "dart",
+        "path": "./snippets/clean-architecture-data.code-snippets"
+      },
+      {
+        "language": "dart",
+        "path": "./snippets/clean-architecture-repositories.code-snippets"
+      },
+      {
+        "language": "dart",
+        "path": "./snippets/clean-architecture-datasources.code-snippets"
+      },
+      {
+        "language": "dart",
+        "path": "./snippets/clean-architecture-services.code-snippets"
       }
     ]
   }
