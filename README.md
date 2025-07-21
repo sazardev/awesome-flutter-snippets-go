@@ -22,6 +22,7 @@ This extension is designed to be the **super mega improved** replacement for exi
 ## 📦 Snippet Categories
 
 ### 🔤 Prefix Legend
+
 - `flw-` - Flutter Widgets
 - `flp-` - Flutter Pages
 - `flt-` - Flutter Themes
@@ -32,7 +33,9 @@ This extension is designed to be the **super mega improved** replacement for exi
 - `flm3-` - Material 3 Components
 
 ### 🧩 Flutter Widgets (`flw-`)
+
 Essential Flutter widgets with modern styling:
+
 - `flw-app` - MaterialApp with Material 3 theme
 - `flw-scaffold` - Basic Scaffold structure
 - `flw-container` - Responsive Container
@@ -43,7 +46,9 @@ Essential Flutter widgets with modern styling:
 - `flw-stateless` - StatelessWidget template
 
 ### 📄 Complete Pages (`flp-`)
+
 Ready-to-use page templates:
+
 - `flp-home` - Complete home page with bottom navigation
 - `flp-login` - Login page with form validation
 - `flp-profile` - User profile page with settings
@@ -51,7 +56,9 @@ Ready-to-use page templates:
 - `flp-dashboard` - Dashboard with statistics and charts
 
 ### 🎨 Themes & Styling (`flt-`)
+
 Material 3 theming system:
+
 - `flt-theme` - Complete app theme configuration
 - `flt-provider` - Theme provider with persistence
 - `flt-colors` - Custom color scheme
@@ -59,7 +66,9 @@ Material 3 theming system:
 - `flt-toggle` - Theme toggle widget
 
 ### 🏗️ Architecture Patterns (`fla-`)
+
 Clean architecture components:
+
 - `fla-bloc` - BLoC pattern implementation
 - `fla-cubit` - Cubit state management
 - `fla-repository` - Repository pattern with Either
@@ -69,7 +78,9 @@ Clean architecture components:
 - `fla-api` - API client with Dio
 
 ### 📐 Responsive Design (`flr-`)
+
 Multi-platform responsive helpers:
+
 - `flr-builder` - Responsive builder widget
 - `flr-layout` - Responsive layout system
 - `flr-grid` - Responsive grid system
@@ -77,7 +88,9 @@ Multi-platform responsive helpers:
 - `flr-navigation` - Adaptive navigation
 
 ### 🧭 Navigation (`fln-`)
+
 Modern navigation components:
+
 - `fln-bottom` - Material 3 bottom navigation
 - `fln-drawer` - Navigation drawer
 - `fln-rail` - Navigation rail for tablets
@@ -86,7 +99,9 @@ Modern navigation components:
 - `fln-route` - Custom page routes
 
 ### 📝 Forms & Validation (`flf-`)
+
 Complete form system:
+
 - `flf-form` - Complete form with validation
 - `flf-field` - Text form field with validation
 - `flf-dropdown` - Dropdown form field
@@ -97,7 +112,9 @@ Complete form system:
 - `flf-validator` - Form validation helper class
 
 ### 🎯 Material 3 Components (`flm3-`)
+
 Latest Material Design 3 widgets:
+
 - `flm3-card` - Material 3 card with modern styling
 - `flm3-fab` - Extended floating action button
 - `flm3-chip` - Various chip components
@@ -121,21 +138,25 @@ Latest Material Design 3 widgets:
 ## 💡 Usage Examples
 
 ### Creating a Complete Home Page
+
 ```dart
 flp-home // Creates a full home page with bottom navigation
 ```
 
 ### Adding Material 3 Theme
+
 ```dart
 flt-theme // Creates complete theme configuration
 ```
 
 ### Setting up BLoC Architecture
+
 ```dart
 fla-bloc // Creates BLoC with events and states
 ```
 
 ### Creating Responsive Layout
+
 ```dart
 flr-layout // Creates responsive layout system
 ```
@@ -143,6 +164,7 @@ flr-layout // Creates responsive layout system
 ## 📖 Best Practices
 
 All snippets follow Flutter best practices:
+
 - ✅ Null-safety compliance
 - ✅ Const constructors where possible
 - ✅ Proper widget disposal
@@ -198,6 +220,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🔄 Changelog
 
 ### Version 1.0.0
+
 - Initial release with 80+ comprehensive snippets
 - Material Design 3 components
 - Complete page templates
@@ -209,68 +232,20 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Made with ❤️ for the Flutter community**
 
-*This extension aims to be the ultimate replacement for existing Flutter snippet tools, providing super mega improved functionality for modern Flutter development.*lutter-snippets-pro README
+---
 
-This is the README for your extension "awesome-flutter-snippets-pro". After writing up a brief description, we recommend including the following sections.
+## 📞 Support
 
-## Features
+- 📧 **Issues**: [GitHub Issues](https://github.com/sazardev/awesome-flutter-snippets-pro/issues)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/sazardev/awesome-flutter-snippets-pro/discussions)
+- ⭐ **Rate us**: [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=awesome-flutter-pro.awesome-flutter-snippets-pro)
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## 🔗 Links
 
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+- 🏠 **Homepage**: [GitHub Repository](https://github.com/sazardev/awesome-flutter-snippets-pro)
+- 📖 **Documentation**: [Snippet Catalog](https://github.com/sazardev/awesome-flutter-snippets-pro/blob/main/ULTIMATE_SNIPPETS_CATALOG.md)
+- 📝 **Changelog**: [Release Notes](https://github.com/sazardev/awesome-flutter-snippets-pro/blob/main/CHANGELOG.md)
 
 ---
 
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+**Enjoy coding! 🚀**
