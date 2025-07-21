@@ -1,9 +1,9 @@
 {
   "name": "awesome-flutter-snippets-pro",
-  "displayName": "Awesome Flutter Snippets Pro",
+  "displayName": "Awesome Flutter Snippets Ultra Pro",
   "description": "🤖 ULTIMATE Flutter snippets extension with GITHUB COPILOT SUPERPOWERS! 180+ professional snippets across 25+ categories including Material Design 3, Clean Architecture, Design Patterns (Singleton, Factory, Builder, Observer, Strategy, Command, Adapter, State), Dart Utilities (Extensions, Validation, Date/String/Number helpers), Flutter-specific patterns, comprehensive CRUD operations, advanced data patterns, dependency injection, error handling, logging, caching, and professional code structures. Makes GitHub Copilot 10x smarter with Flutter development!",
   "version": "1.0.0",
-  "publisher": "awesome-flutter-pro",
+  "publisher": "sazardev",
   "repository": {
     "type": "git",
     "url": "https://github.com/sazardev/awesome-flutter-snippets-pro"
@@ -108,7 +108,7 @@
           "description": "Enable GitHub Copilot enhancement features"
         },
         "flutterSnippets.autoTriggerSuggestions": {
-          "type": "boolean", 
+          "type": "boolean",
           "default": true,
           "description": "Automatically trigger snippet suggestions based on context"
         },
@@ -124,7 +124,9 @@
         "language": "dart",
         "scopeName": "source.dart.flutter.enhanced",
         "path": "./syntaxes/flutter-enhanced.json",
-        "injectTo": ["source.dart"]
+        "injectTo": [
+          "source.dart"
+        ]
       }
     ],
     "snippets": [

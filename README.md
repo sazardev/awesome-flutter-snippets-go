@@ -1,6 +1,6 @@
-# Awesome Flutter Snippets Pro
+# Awesome Flutter Snippets Ultra Pro
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://marketplace.visualstudio.com/items?itemName=awesome-flutter-pro.awesome-flutter-snippets-pro)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://marketplace.visualstudio.com/items?itemName=sazardev.awesome-flutter-snippets-pro)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 🚀 **The ultimate Flutter snippets extension** - A comprehensive collection of Flutter code snippets with Material Design 3, complete UI components, pages, themes, and clean architecture patterns.
@@ -238,7 +238,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - 📧 **Issues**: [GitHub Issues](https://github.com/sazardev/awesome-flutter-snippets-pro/issues)
 - 💬 **Discussions**: [GitHub Discussions](https://github.com/sazardev/awesome-flutter-snippets-pro/discussions)
-- ⭐ **Rate us**: [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=awesome-flutter-pro.awesome-flutter-snippets-pro)
+- ⭐ **Rate us**: [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=sazardev.awesome-flutter-snippets-pro)
 
 ## 🔗 Links
 
