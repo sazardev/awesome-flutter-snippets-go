@@ -1,7 +1,7 @@
 {
   "name": "awesome-flutter-snippets-pro",
   "displayName": "Awesome Flutter Snippets Pro",
-  "description": "Ultimate Flutter snippets collection with Material Design 3, Clean Architecture, comprehensive CRUD operations, advanced data patterns, dependency injection, and professional code structures",
+  "description": "🤖 ULTIMATE Flutter snippets extension with GITHUB COPILOT SUPERPOWERS! 141 professional snippets across 22 categories including Material Design 3, Clean Architecture, comprehensive CRUD operations, advanced data patterns, dependency injection, and professional code structures. Makes GitHub Copilot 10x smarter with Flutter development!",
   "version": "1.0.0",
   "publisher": "awesome-flutter-pro",
   "repository": {
@@ -65,7 +65,22 @@
     "state patterns",
     "form management",
     "list management",
-    "animation controller"
+    "animation controller",
+    "github copilot",
+    "copilot enhanced",
+    "ai assisted",
+    "intelligent snippets",
+    "autocomplete",
+    "context aware",
+    "smart suggestions",
+    "pattern recognition",
+    "code generation",
+    "productivity",
+    "developer experience",
+    "auto trigger",
+    "semantic completion",
+    "copilot steroids",
+    "ai powered"
   ],
   "engines": {
     "vscode": "^1.102.0"
@@ -74,8 +89,46 @@
     "Snippets",
     "Other"
   ],
-  "icon": "assets/icon.png",
+  "main": "./src/extension.js",
+  "activationEvents": [
+    "onLanguage:dart"
+  ],
   "contributes": {
+    "commands": [
+      {
+        "command": "flutter-snippets.showCatalog",
+        "title": "🤖 Show Flutter Snippets Catalog",
+        "category": "Flutter Snippets"
+      }
+    ],
+    "configuration": {
+      "title": "Flutter Snippets Pro",
+      "properties": {
+        "flutterSnippets.enableCopilotEnhancement": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable GitHub Copilot enhancement features"
+        },
+        "flutterSnippets.autoTriggerSuggestions": {
+          "type": "boolean", 
+          "default": true,
+          "description": "Automatically trigger snippet suggestions based on context"
+        },
+        "flutterSnippets.showIntelligentHovers": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show intelligent hover information for Flutter patterns"
+        }
+      }
+    },
+    "grammars": [
+      {
+        "language": "dart",
+        "scopeName": "source.dart.flutter.enhanced",
+        "path": "./syntaxes/flutter-enhanced.json",
+        "injectTo": ["source.dart"]
+      }
+    ],
     "snippets": [
       {
         "language": "dart",

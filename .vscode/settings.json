@@ -1,0 +1,52 @@
+{
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "dart": true,
+    "yaml": true,
+    "json": true
+  },
+  "github.copilot.advanced": {},
+  "github.copilot.chat.welcomeMessage": "always",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.editor.enableCodeActions": true,
+  "github.copilot.renameSuggestions.triggerAutomatically": true,
+  
+  "dart.flutterSnippets": true,
+  "dart.triggerSignatureHelpAutomatically": true,
+  "dart.completeFunctionCalls": true,
+  "dart.showTodos": true,
+  "dart.showIgnoreQuickFixes": true,
+  
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.tabCompletion": "on",
+  "editor.snippetSuggestions": "top",
+  "editor.wordBasedSuggestions": "currentDocument",
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "on",
+    "strings": "on"
+  },
+  "editor.quickSuggestionsDelay": 10,
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.inlineSuggest.enabled": true,
+  
+  "emmet.includeLanguages": {
+    "dart": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  
+  "files.associations": {
+    "*.code-snippets": "jsonc",
+    "copilot-instructions.md": "markdown"
+  },
+  
+  "json.schemas": [
+    {
+      "fileMatch": ["*.code-snippets"],
+      "url": "https://raw.githubusercontent.com/microsoft/vscode/main/src/vs/workbench/contrib/snippets/browser/snippetsSchema.json"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "name": "Awesome Flutter Snippets Pro - Copilot Enhanced",
+  "patterns": [
+    {
+      "name": "flutter.snippet.trigger",
+      "match": "\\b(clean-|flb-|flp-|flr-|fls-|flw-|flm3-|fla-|fln-|flf-|flap-)\\w*",
+      "captures": {
+        "1": {
+          "name": "support.function.flutter.snippet"
+        }
+      }
+    },
+    {
+      "name": "flutter.architecture.keywords",
+      "match": "\\b(entity|usecase|repository|dto|mapper|datasource|service|bloc|cubit|provider|riverpod|setstate)\\b",
+      "captures": {
+        "1": {
+          "name": "keyword.control.flutter.architecture"
+        }
+      }
+    },
+    {
+      "name": "flutter.clean.architecture",
+      "match": "\\b(Either|Left|Right|Failure|UseCase|Repository|Entity|ValueObject)\\b",
+      "captures": {
+        "1": {
+          "name": "support.type.flutter.clean"
+        }
+      }
+    }
+  ],
+  "scopeName": "source.dart.flutter.enhanced",
+  "injectionSelector": "source.dart",
+  "injectTo": ["source.dart"],
+  "copilotEnhancement": {
+    "enabled": true,
+    "autoTriggers": {
+      "entity": "clean-entity",
+      "usecase": "clean-usecase-create", 
+      "repository": "clean-repo-impl",
+      "bloc": "flb-bloc-complete",
+      "provider": "flp-provider",
+      "riverpod": "flr-provider",
+      "setstate": "fls-stateful",
+      "form": "flf-form",
+      "navigation": "fln-bottom",
+      "material3": "flm3-card",
+      "responsive": "flr-builder",
+      "animation": "fla-fade"
+    },
+    "contextPatterns": {
+      "*_entity.dart": ["clean-entity", "clean-valueobject", "clean-failure"],
+      "*_bloc.dart": ["flb-bloc-complete", "flb-cubit", "flb-consumer"],
+      "*_provider.dart": ["flp-provider", "flp-consumer", "flp-multi-provider"],
+      "*_repository.dart": ["clean-repo-impl", "clean-datasource-remote", "clean-datasource-local"],
+      "*_usecase.dart": ["clean-usecase-create", "clean-usecase-get", "clean-usecase-update"],
+      "*_page.dart": ["flp-home", "flp-login", "flp-dashboard", "flp-profile"],
+      "*_widget.dart": ["flw-container", "flw-scaffold", "flw-card", "flm3-card"]
+    },
+    "semanticMappings": {
+      "create user": ["clean-entity", "clean-usecase-create", "clean-dto"],
+      "state management": ["flb-bloc-complete", "flp-provider", "flr-provider"],
+      "form validation": ["flf-form", "flf-validator", "flf-field"],
+      "api integration": ["clean-http-datasource", "clean-repo-impl", "clean-api-response"],
+      "dependency injection": ["clean-getit-setup", "clean-injectable-module"],
+      "responsive design": ["flr-builder", "flr-layout", "flr-breakpoints"],
+      "navigation": ["fln-bottom", "fln-drawer", "fln-rail", "flb-nav"],
+      "material design": ["flm3-card", "flm3-button", "flm3-theme", "flm3-dialog"]
+    },
+    "importTriggers": {
+      "package:flutter_bloc/flutter_bloc.dart": ["flb-bloc-complete", "flb-consumer", "flb-builder"],
+      "package:provider/provider.dart": ["flp-provider", "flp-consumer", "flp-selector"],
+      "package:flutter_riverpod/flutter_riverpod.dart": ["flr-provider", "flr-consumer", "flr-stream"],
+      "package:dartz/dartz.dart": ["clean-entity", "clean-usecase-create", "clean-failure"],
+      "package:get_it/get_it.dart": ["clean-getit-setup", "clean-service"],
+      "package:injectable/injectable.dart": ["clean-injectable-module"],
+      "package:dio/dio.dart": ["clean-http-datasource", "clean-api-response"],
+      "package:hive/hive.dart": ["clean-hive-datasource"]
+    },
+    "patternChains": {
+      "after_entity": ["clean-usecase-create", "clean-repository", "clean-dto"],
+      "after_usecase": ["clean-repo-impl", "clean-http-datasource", "clean-getit-setup"],
+      "after_bloc": ["flb-consumer", "flb-builder", "flb-listener"],
+      "after_provider": ["flp-consumer", "flp-selector", "flp-multi-provider"],
+      "after_dto": ["clean-mapper", "clean-api-response"],
+      "after_repository": ["clean-datasource-remote", "clean-datasource-local"]
+    }
+  }
+}
