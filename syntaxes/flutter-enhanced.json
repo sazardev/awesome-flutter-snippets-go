@@ -3,7 +3,7 @@
   "patterns": [
     {
       "name": "flutter.snippet.trigger",
-      "match": "\\b(clean-|flb-|flp-|flr-|fls-|flw-|flm3-|fla-|fln-|flf-|flap-)\\w*",
+      "match": "\\b(clean-|flb-|flp-|flr-|fls-|flw-|flm3-|fla-|fln-|flf-|flap-|dp-|dart-)\\w*",
       "captures": {
         "1": {
           "name": "support.function.flutter.snippet"
@@ -12,7 +12,7 @@
     },
     {
       "name": "flutter.architecture.keywords",
-      "match": "\\b(entity|usecase|repository|dto|mapper|datasource|service|bloc|cubit|provider|riverpod|setstate)\\b",
+      "match": "\\b(entity|usecase|repository|dto|mapper|datasource|service|bloc|cubit|provider|riverpod|setstate|singleton|factory|builder|observer|strategy|command|adapter|state|tojson|fromjson|tostring|equals|copywith|validation|logger|cache|preferences|eventbus|debouncer|retry|result)\\b",
       "captures": {
         "1": {
           "name": "keyword.control.flutter.architecture"
@@ -38,7 +38,12 @@
       "entity": "clean-entity",
       "usecase": "clean-usecase-create", 
       "repository": "clean-repo-impl",
+      "dto": "clean-dto",
+      "mapper": "clean-mapper",
+      "datasource": "clean-http-datasource",
+      "service": "clean-service",
       "bloc": "flb-bloc-complete",
+      "cubit": "flb-cubit",
       "provider": "flp-provider",
       "riverpod": "flr-provider",
       "setstate": "fls-stateful",
@@ -46,7 +51,29 @@
       "navigation": "fln-bottom",
       "material3": "flm3-card",
       "responsive": "flr-builder",
-      "animation": "fla-fade"
+      "animation": "fla-fade",
+      "singleton": "dp-singleton",
+      "factory": "dp-factory",
+      "builder": "dp-builder",
+      "observer": "dp-observer",
+      "strategy": "dp-strategy",
+      "command": "dp-command",
+      "adapter": "dp-adapter",
+      "state": "dp-state",
+      "tojson": "dart-tojson",
+      "fromjson": "dart-fromjson",
+      "tostring": "dart-tostring",
+      "equals": "dart-equals",
+      "copywith": "dart-copywith",
+      "dateformat": "dart-dateformat",
+      "validation": "dart-validators",
+      "logger": "dart-logger",
+      "cache": "dart-cache",
+      "preferences": "dart-preferences",
+      "eventbus": "dart-eventbus",
+      "debouncer": "dart-debouncer",
+      "retry": "dart-retry",
+      "result": "dart-result"
     },
     "contextPatterns": {
       "*_entity.dart": ["clean-entity", "clean-valueobject", "clean-failure"],
