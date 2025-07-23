@@ -15,9 +15,14 @@ This extension is designed to be the **super mega improved** replacement for exi
 - 📐 **Responsive design** helpers and layouts
 - 🧭 **Navigation components** (Bottom Nav, Drawer, Rail, Tabs)
 - 📝 **Form validation** and input fields
-- 🎯 **80+ comprehensive snippets** organized by category
+- 🎯 **200+ comprehensive snippets** organized by category
 - ⚡ **Production-ready** code with best practices
 - 🔧 **Null-safety** and latest Flutter patterns
+- 🧪 **Complete testing suite** (Unit/Widget/Integration/Golden)
+- 🚀 **Performance optimization** patterns and widgets
+- 🔐 **Security & authentication** (Firebase, Biometric, Secure Storage)
+- 🌐 **Advanced networking** (GraphQL, WebSocket, REST)
+- 🌍 **Internationalization (i18n)** with 9+ languages support
 
 ## 📦 Snippet Categories
 
@@ -31,6 +36,11 @@ This extension is designed to be the **super mega improved** replacement for exi
 - `fln-` - Flutter Navigation
 - `flf-` - Flutter Forms
 - `flm3-` - Material 3 Components
+- `flt-` - Flutter Testing
+- `flp-` - Flutter Performance
+- `fls-` - Flutter Security
+- `fln-` - Flutter Networking
+- `fli-` - Flutter Internationalization
 
 ### 🧩 Flutter Widgets (`flw-`)
 
@@ -127,6 +137,46 @@ Latest Material Design 3 widgets:
 - `flm3-search` - Search bar component
 - `flm3-menu` - Menu anchor
 
+### 🧪 Testing (`flt-`)
+
+Complete testing suite for Flutter apps:
+
+- `flt-widget-test` - Widget test with pump and verify
+- `flt-bloc-test` - BLoC test with bloc_test package
+- `flt-integration-test` - Integration test setup
+- `flt-mock-setup` - Mock setup with mocktail
+- `flt-golden-test` - Golden test for widget screenshots
+
+### 🚀 Performance (`flp-`)
+
+Performance optimization patterns:
+
+- `flp-optimized-list` - ListView with lazy loading and pagination
+- `flp-image-cache` - Optimized image loading with caching
+- `flp-memory-optimized` - StatefulWidget with memory optimization
+
+### 🔐 Security (`fls-`)
+
+Security and authentication patterns:
+
+- `fls-firebase-auth` - Complete Firebase Authentication setup
+- `fls-secure-storage` - Secure storage wrapper with encryption
+- `fls-biometric-auth` - Biometric authentication with local_auth
+
+### 🌐 Networking (`fln-`)
+
+Advanced networking solutions:
+
+- `fln-graphql-client` - GraphQL client with caching and error handling
+- `fln-websocket` - WebSocket manager with reconnection
+
+### 🌍 Internationalization (`fli-`)
+
+Multi-language support:
+
+- `fli-setup` - Complete i18n setup with 9+ languages
+- `fli-language-selector` - Language selector with flags and persistence
+
 ## 🚀 Quick Start
 
 1. Install the extension from VS Code Marketplace
@@ -188,11 +238,29 @@ dependencies:
   dartz: ^0.10.1
   shared_preferences: ^2.2.2
   google_fonts: ^6.1.0
+  # Security & Auth
+  firebase_auth: ^4.15.3
+  google_sign_in: ^6.1.6
+  flutter_secure_storage: ^9.0.0
+  local_auth: ^2.1.6
+  # Networking & Performance
+  graphql_flutter: ^5.1.2
+  cached_network_image: ^3.3.0
+  # Internationalization
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.18.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^3.0.1
+  # Testing
+  bloc_test: ^9.1.5
+  mocktail: ^1.0.1
+  integration_test:
+    sdk: flutter
+  golden_toolkit: ^0.15.0
 ```
 
 ## 🌟 Why Choose This Extension?

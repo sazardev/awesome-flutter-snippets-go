@@ -1,9 +1,10 @@
 {
   "name": "awesome-flutter-snippets-pro",
   "displayName": "Awesome Flutter Snippets Ultra Pro",
-  "description": "🤖 ULTIMATE Flutter snippets extension with GITHUB COPILOT SUPERPOWERS! 180+ professional snippets across 25+ categories including Material Design 3, Clean Architecture, Design Patterns (Singleton, Factory, Builder, Observer, Strategy, Command, Adapter, State), Dart Utilities (Extensions, Validation, Date/String/Number helpers), Flutter-specific patterns, comprehensive CRUD operations, advanced data patterns, dependency injection, error handling, logging, caching, and professional code structures. Makes GitHub Copilot 10x smarter with Flutter development!",
-  "version": "1.0.0",
+  "description": "🤖 ULTIMATE Flutter snippets extension with GITHUB COPILOT SUPERPOWERS! 200+ professional snippets across 30+ categories including Material Design 3, Clean Architecture, Testing (Unit/Widget/Integration), Performance Optimization, Security (Firebase Auth, Biometric, Secure Storage), Advanced Networking (GraphQL, WebSocket), Internationalization (i18n), Design Patterns (Singleton, Factory, Builder, Observer, Strategy, Command, Adapter, State), Dart Utilities (Extensions, Validation, Date/String/Number helpers), Flutter-specific patterns, comprehensive CRUD operations, advanced data patterns, dependency injection, error handling, logging, caching, and professional code structures. Makes GitHub Copilot 10x smarter with Flutter development!",
+  "version": "2.1.0",
   "publisher": "sazardev",
+  "icon": "icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/sazardev/awesome-flutter-snippets-pro"
@@ -78,7 +79,38 @@
     "auto trigger",
     "semantic completion",
     "copilot steroids",
-    "ai powered"
+    "ai powered",
+    "testing",
+    "unit tests",
+    "widget tests",
+    "integration tests",
+    "golden tests",
+    "mock",
+    "bloc test",
+    "performance",
+    "optimization",
+    "memory management",
+    "image caching",
+    "lazy loading",
+    "security",
+    "authentication",
+    "firebase auth",
+    "biometric",
+    "secure storage",
+    "networking",
+    "graphql",
+    "websocket",
+    "rest api",
+    "http client",
+    "internationalization",
+    "i18n",
+    "localization",
+    "l10n",
+    "multi language",
+    "flutter 3.24",
+    "dart 3.5",
+    "null safety",
+    "sound null safety"
   ],
   "engines": {
     "vscode": "^1.102.0"
@@ -96,6 +128,81 @@
       {
         "command": "flutter-snippets.showCatalog",
         "title": "🤖 Show Flutter Snippets Catalog",
+        "category": "Flutter Snippets"
+      },
+      {
+        "command": "flutter-snippets.createProject",
+        "title": "🚀 Create Flutter Project with Clean Architecture",
+        "category": "Flutter Snippets"
+      },
+      {
+        "command": "flutter-snippets.createFeature",
+        "title": "🏗️ Create Feature with BLoC Pattern",
+        "category": "Flutter Snippets"
+      },
+      {
+        "command": "flutter-snippets.createPage",
+        "title": "📄 Create Complete Page Template",
+        "category": "Flutter Snippets"
+      },
+      {
+        "command": "flutter-snippets.createWidget",
+        "title": "🧩 Create Custom Widget",
+        "category": "Flutter Snippets"
+      },
+      {
+        "command": "flutter-snippets.setupTheme",
+        "title": "🎨 Setup Material 3 Theme System",
+        "category": "Flutter Snippets"
+      },
+      {
+        "command": "flutter-snippets.setupNavigation",
+        "title": "🧭 Setup Navigation Structure",
+        "category": "Flutter Snippets"
+      },
+      {
+        "command": "flutter-snippets.setupDependencies",
+        "title": "📦 Setup Project Dependencies",
+        "category": "Flutter Snippets"
+      },
+      {
+        "command": "flutter-snippets.buildApk",
+        "title": "📱 Build APK (Release)",
+        "category": "Flutter Snippets"
+      },
+      {
+        "command": "flutter-snippets.buildAppBundle",
+        "title": "📦 Build App Bundle (AAB)",
+        "category": "Flutter Snippets"
+      },
+      {
+        "command": "flutter-snippets.runTests",
+        "title": "🧪 Run All Tests",
+        "category": "Flutter Snippets"
+      },
+      {
+        "command": "flutter-snippets.cleanProject",
+        "title": "🧹 Clean and Get Dependencies",
+        "category": "Flutter Snippets"
+      },
+      {
+        "command": "flutter-snippets.generateIcons",
+        "title": "🎯 Generate App Icons",
+        "category": "Flutter Snippets"
+      },
+      {
+        "command": "flutter-snippets.setupFirebase",
+        "title": "🔥 Setup Firebase Integration",
+        "category": "Flutter Snippets"
+      },
+      {
+        "command": "flutter-snippets.setupStateManagement",
+        "title": "🎯 Setup State Management",
+        "category": "Flutter Snippets"
+      },
+      {
+        "command": "flutter-snippets.createTests",
+        "title": "🧪 Create Test Files",
         "category": "Flutter Snippets"
       }
     ],
@@ -241,6 +348,26 @@
       {
         "language": "dart",
         "path": "./snippets/dart-flutter-patterns.code-snippets"
+      },
+      {
+        "language": "dart",
+        "path": "./snippets/flutter-testing.code-snippets"
+      },
+      {
+        "language": "dart",
+        "path": "./snippets/flutter-performance.code-snippets"
+      },
+      {
+        "language": "dart",
+        "path": "./snippets/flutter-security.code-snippets"
+      },
+      {
+        "language": "dart",
+        "path": "./snippets/flutter-networking.code-snippets"
+      },
+      {
+        "language": "dart",
+        "path": "./snippets/flutter-i18n.code-snippets"
       }
     ]
   }
